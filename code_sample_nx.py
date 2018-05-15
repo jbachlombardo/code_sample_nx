@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 df_plot = pd.read_csv('filepath') #csv generated from separate program that uses beautifulsoup to read through online activity
 
 plt.figure(figsize = (10, 8))
-G = nx.from_pandas_dataframe(df_plot, 'From', 'To', 'Order')
+G = nx.from_pandas_dataframe(df_plot, 'From', 'To', 'Order') #'Order' described type of connection (not visualized but used separately to inform engagement)
 centrality = nx.degree_centrality(G)
 df_cent = pd.DataFrame(list(centrality.items()), columns = ['Name', 'Centrality']).sort_values(by = 'Centrality', ascending = False)
-hubs = df_cent['Name'].head(24).unique() #Get top 20 hubs, outside of 4 known centers of activity
+hubs = df_cent['Name'].head(24).unique() #Get top 20 hubs, outside of 4 known centers of activity, which are known to have high centrality figures
 centers = ['Primary A', 'Primary B', 'Primary C', 'Primary D']
 labels = {}
 pos = nx.spring_layout(G)
