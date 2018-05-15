@@ -6,6 +6,6 @@ The inputs were generated from survey activity (gathered via a Messenger bot) an
 
 This created the following image, which we used for presentations.
 
-(Inputs anonymized for this run sample.)
+(Inputs anonymized for this sample.)
 
 ![nximage](https://jbachlombardo.files.wordpress.com/2018/03/network-activity.png)
