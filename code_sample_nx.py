@@ -13,7 +13,7 @@ hubs = df_cent['Name'].head(24).unique() #Get top 20 hubs, outside of 4 known ce
 centers = ['Primary A', 'Primary B', 'Primary C', 'Primary D']
 labels = {}
 pos = nx.spring_layout(G)
-for i, node in enumerate(G.nodes()) : #Generate labels the graphic with numbers for hubs (to be printed later for number / hub identification) and full names for centers of activity
+for i, node in enumerate(G.nodes()) : #Generate labels for the graphic with numbers for key nodes (to be printed later for each number / node pair) and full names for centers of activity
     if node in hubs :
         labels[node] = i
     if node in centers :
