@@ -1,4 +1,4 @@
-# NetworkX code sample
+# Code sample for network analysis (scraping, networkx, visualization)
 
 (Full workflow contained in network_graphing.py, with helper functions in network_fcns.py.)
 
